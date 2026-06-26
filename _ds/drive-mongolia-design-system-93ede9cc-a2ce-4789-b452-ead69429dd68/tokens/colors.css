@@ -1,0 +1,49 @@
+/* =========================================================================
+   Drive Mongolia — Color tokens
+   A warm, earthy expedition palette: bone "paper" surfaces, near-black ink,
+   and a single rust/clay accent pulled from the Gobi cliffs.
+   ========================================================================= */
+
+:root {
+  /* ---- Ink (near-black browns, used for text + dark surfaces) ---- */
+  --ink:        #181410;   /* @kind color */
+  --ink-2:      #211b14;   /* @kind color */
+
+  /* ---- Paper (warm bone surfaces, light backgrounds) ---- */
+  --paper:      #f4efe6;   /* @kind color */
+  --paper-2:    #ece3d4;   /* @kind color */
+  --paper-3:    #e2d7c4;   /* @kind color */
+
+  /* ---- Hairlines ---- */
+  --line:       rgba(24, 20, 16, 0.14);  /* @kind color */
+  --line-2:     rgba(24, 20, 16, 0.28);  /* @kind color */
+
+  /* ---- Rust (the single brand accent — clay / weathered iron) ---- */
+  --rust:       #bc5e1c;   /* @kind color */
+  --rust-deep:  #9c4815;   /* @kind color */
+  --rust-light: #e79a52;   /* @kind color */
+  --kicker-on-dark: #eba45c; /* @kind color */
+
+  /* ---- Semantic text ---- */
+  --text:       #181410;                 /* @kind color */
+  --muted:      rgba(24, 20, 16, 0.66);  /* @kind color */
+  --muted-2:    rgba(24, 20, 16, 0.50);  /* @kind color */
+  --on-dark:    #f6f1e9;                 /* @kind color */
+  --on-dark-mut:rgba(246, 241, 233, 0.78); /* @kind color */
+
+  /* ---- Status (availability) ---- */
+  --ok:         #4e7d3f;                  /* @kind color */
+  --ok-soft:    rgba(78, 125, 63, 0.14);  /* @kind color */
+
+  /* ---- Semantic aliases ---- */
+  --surface-page:    var(--paper);   /* @kind color */
+  --surface-alt:     var(--paper-2); /* @kind color */
+  --surface-card:    var(--paper);   /* @kind color */
+  --surface-dark:    var(--ink);     /* @kind color */
+  --text-body:       var(--text);    /* @kind color */
+  --text-muted:      var(--muted);   /* @kind color */
+  --accent:          var(--rust);    /* @kind color */
+  --accent-hover:    var(--rust-deep); /* @kind color */
+  --border-default:  var(--line);    /* @kind color */
+  --border-strong:   var(--line-2);  /* @kind color */
+}

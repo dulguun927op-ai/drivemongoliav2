@@ -1,0 +1,24 @@
+/* =========================================================================
+   Drive Mongolia — Spacing, sizing & layout tokens
+   ========================================================================= */
+
+:root {
+  /* ---- Spacing scale ---- */
+  --space-1:  4px;   /* @kind spacing */
+  --space-2:  8px;   /* @kind spacing */
+  --space-3:  12px;  /* @kind spacing */
+  --space-4:  16px;  /* @kind spacing */
+  --space-5:  20px;  /* @kind spacing */
+  --space-6:  24px;  /* @kind spacing */
+  --space-8:  32px;  /* @kind spacing */
+  --space-10: 40px;  /* @kind spacing */
+  --space-14: 56px;  /* @kind spacing */
+  --space-18: 72px;  /* @kind spacing */
+
+  /* ---- Layout ---- */
+  --wrap: 1240px;                              /* @kind spacing */
+  --gutter: 28px;                              /* @kind spacing */
+  --section-pad: clamp(72px, 9vw, 130px);      /* @kind spacing */
+  --header-h: 84px;                            /* @kind spacing */
+  --header-h-solid: 70px;                      /* @kind spacing */
+}

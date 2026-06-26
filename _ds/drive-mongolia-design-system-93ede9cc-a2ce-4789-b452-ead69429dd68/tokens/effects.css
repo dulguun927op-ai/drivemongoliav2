@@ -1,0 +1,35 @@
+/* =========================================================================
+   Drive Mongolia — Radii, borders, shadows, scrims & motion
+   The brand reads "rugged print", so corners are SHARP (2–6px max) and the
+   only soft shadow is a deep, warm drop under floating panels (modals).
+   ========================================================================= */
+
+:root {
+  /* ---- Radii (deliberately small — this is a print-led, hard-edged brand) ---- */
+  --radius-xs:  2px;  /* @kind radius */
+  --radius-sm:  3px;  /* @kind radius */
+  --radius-md:  4px;  /* @kind radius */
+  --radius-lg:  6px;  /* @kind radius */
+  --radius-pill: 50%; /* @kind radius */
+
+  /* ---- Borders ---- */
+  --border-hair: 1px solid var(--line);    /* @kind other */
+  --border-ui:   1px solid var(--line-2);  /* @kind other */
+
+  /* ---- Shadows ---- */
+  --shadow:        0 30px 70px -28px rgba(20, 14, 8, 0.55);  /* @kind shadow */
+  --shadow-btn:    0 14px 28px -12px rgba(156, 72, 21, 0.8); /* @kind shadow */
+  --shadow-header: 0 1px 0 var(--line), 0 10px 30px -22px rgba(0,0,0,.5); /* @kind shadow */
+
+  /* ---- Scrims (photo legibility — warm near-black, never pure black) ---- */
+  --scrim-hero:   linear-gradient(180deg, rgba(16,12,8,0.5) 0%, rgba(16,12,8,0.05) 26%, rgba(16,12,8,0.05) 40%, rgba(16,12,8,0.82) 100%); /* @kind other */
+  --scrim-band:   linear-gradient(0deg, rgba(16,12,8,.5), rgba(16,12,8,.5)); /* @kind other */
+  --scrim-card:   linear-gradient(180deg, rgba(16,12,8,0) 35%, rgba(16,12,8,.9) 100%); /* @kind other */
+
+  /* ---- Motion ---- */
+  --ease-out:   cubic-bezier(.2,.7,.2,1);     /* @kind other */
+  --ease-pop:   cubic-bezier(.2,.9,.3,1.05);  /* @kind other */
+  --dur-fast:   .2s;   /* @kind other */
+  --dur-med:    .3s;   /* @kind other */
+  --dur-slow:   .8s;   /* @kind other */
+}

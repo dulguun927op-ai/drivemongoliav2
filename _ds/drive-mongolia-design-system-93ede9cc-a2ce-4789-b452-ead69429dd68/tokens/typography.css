@@ -1,0 +1,43 @@
+/* =========================================================================
+   Drive Mongolia — Typography tokens
+   Two families: Oswald (condensed, UPPERCASE display + chrome) and Inter (body).
+   Display is almost always uppercase with tight leading; body is airy (1.7).
+   ========================================================================= */
+
+:root {
+  /* ---- Families ---- */
+  --font-body:    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; /* @kind font */
+  --font-display: "Oswald", "Inter", system-ui, sans-serif;                          /* @kind font */
+  /* legacy aliases used across the original site */
+  --font:         var(--font-body);    /* @kind font */
+  --display:      var(--font-display); /* @kind font */
+
+  /* ---- Weights ---- */
+  --fw-regular:  400;  /* @kind other */
+  --fw-medium:   500;  /* @kind other */
+  --fw-semibold: 600;  /* @kind other */
+  --fw-bold:     700;  /* @kind other */
+
+  /* ---- Display scale (Oswald, clamp-driven on the live site) ---- */
+  --text-hero:    clamp(2.7rem, 7.4vw, 6rem);   /* @kind font */
+  --text-display: clamp(2rem, 4.6vw, 3.5rem);   /* @kind font */
+  --text-h2:      clamp(1.8rem, 3.6vw, 3rem);   /* @kind font */
+  --text-h3:      1.4rem;                        /* @kind font */
+
+  /* ---- Body scale (Inter) ---- */
+  --text-lead:    1.16rem;  /* @kind font */
+  --text-body-lg: 1.1rem;   /* @kind font */
+  --text-base:    1rem;     /* @kind font */
+  --text-sm:      0.88rem;  /* @kind font */
+  --text-xs:      0.78rem;  /* @kind font */
+
+  /* ---- Leading ---- */
+  --leading-tight:  1.0;   /* @kind other */
+  --leading-snug:   1.12;  /* @kind other */
+  --leading-body:   1.7;   /* @kind other */
+
+  /* ---- Tracking (uppercase needs air) ---- */
+  --tracking-kicker: 0.26em; /* @kind other */
+  --tracking-label:  0.12em; /* @kind other */
+  --tracking-ui:     0.07em; /* @kind other */
+}
